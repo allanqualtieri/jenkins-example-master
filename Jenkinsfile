@@ -5,10 +5,9 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                echo "Hello World!"
-                sh "echo Hello from the shell"
-                sh "hostname"
-                sh "uptime"
+                withMaven(maven : '	') {
+                    sh 'mvn clean compile'
+                }
             }
         }
 

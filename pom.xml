@@ -55,7 +55,7 @@
 
     </dependencies>
 
-    <repositories>
+   <!-- <repositories>
         <repository>
             <id>myMavenRepo.read</id>
             <url>https://mymavenrepo.com/repo/A5iUGSGaFP0fK8rvyR2f/</url>
@@ -68,5 +68,5 @@
             <url>https://mymavenrepo.com/repo/cNuBYTTk7LQVZT4aVgPD/</url>
         </repository>
     </distributionManagement>
-
+-->
 </project>

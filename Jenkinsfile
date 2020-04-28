@@ -4,19 +4,23 @@ pipeline {
     stages {
         stage ('Compile Stage') {
 
+         stage('build') {
             steps {
-                withMaven(maven : 'maven_3_6_3') {
-                    sh 'mvn clean compile'
-                }
+                echo "Hello World!"
+                sh "echo Hello from the shell"
+                sh "hostname"
+                sh "uptime"
             }
         }
 
         stage ('Testing Stage') {
 
+          stage('build') {
             steps {
-                withMaven(maven : 'maven_3_6_3') {
-                    sh 'mvn test'
-                }
+                echo "Hello World!"
+                sh "echo Hello from the shell"
+                sh "hostname"
+                sh "uptime"
             }
         }
 

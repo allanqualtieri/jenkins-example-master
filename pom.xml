@@ -59,7 +59,7 @@
         <repository>
             <id>myMavenRepo.read</id>
             <url>https://mymavenrepo.com/repo/A5iUGSGaFP0fK8rvyR2f/</url>
-        </repository>
+        </repository> 
     </repositories>
 
     <distributionManagement>
